@@ -1,30 +1,87 @@
+/* Reset básico */
 * {
-    margin: 10px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 10px;
-    padding: 0;
-}
-
-header{
-    background-color: rgba(201, 181, 181, 0.548);
-    color: black;
-    margin: 0px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: auto;
     padding: 20px;
-    text-align: center;
-    font-size:x-large;
 }
 
-div.rodape{
-    background-color: rgba(201, 181, 181, 0.548);
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #222;
+}
+
+header .subtitulo {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #444;
+    border-left: 4px solid #777;
+    padding-left: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    position: relative;
+}
+
+ul li::before {
+    content: "•";
+    color: #555;
+    position: absolute;
+    left: 0;
+}
+
+/* Rodapé */
+footer {
     text-align: center;
     padding: 15px;
+    border-top: 2px solid #ccc;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #555;
 }
 
-div.rodape nav li {
-    overflow: hidden;
-    font-size: 20px;
+footer a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #000;
+    text-decoration: underline;
 }
